@@ -47,6 +47,10 @@ allow_credentials = false
 host = "db"
 port = 5432
 
+[production.mailgun]
+domain = "mail.hosaka.io"
+from_email = "Moods<moods@mail.hosaka.io>"
+
 [testing]
 dynaconf_merge = true
 jwt_secret = "test-secret-do-not-use-in-production-minimum-32-bytes-long"
